@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.logstash.LogstashConfiguration plugin="logstash@2.5.0205.vd05825ed46bd">
+  <logstashIndexer class="jenkins.plugins.logstash.configuration.ElasticSearch">
+    <username>elastic</username>
+    <password>{AQAAABAAAAAQhobatvTrJuxqT8OJ6k2PzdTz3DyE4mwGp21xb0zMaQI=}</password>
+    <uri>http://65.0.158.44:9200/logstash</uri>
+    <mimeType>application/json</mimeType>
+    <customServerCertificateId></customServerCertificateId>
+  </logstashIndexer>
+  <enabled>true</enabled>
+  <dataMigrated>true</dataMigrated>
+  <enableGlobally>false</enableGlobally>
+  <milliSecondTimestamps>true</milliSecondTimestamps>
+</jenkins.plugins.logstash.LogstashConfiguration>

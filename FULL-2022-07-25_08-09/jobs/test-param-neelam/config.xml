@@ -1,0 +1,93 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>TEST_BOOLEAN</string>
+        <string>TEST_CHOICE</string>
+        <string>TEST_TEXT</string>
+        <string>TEST_PASSWORD</string>
+        <string>TEST_STRING</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>TEST_BOOLEAN</name>
+          <description>Sample boolean parameter</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TEST_STRING</name>
+          <description>Sample string parameter</description>
+          <defaultValue>ssbostan</defaultValue>
+          <trim>true</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>TEST_TEXT</name>
+          <description>Sample multi-line text parameter</description>
+          <defaultValue>Jenkins Pipeline Tutorial</defaultValue>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.PasswordParameterDefinition>
+          <name>TEST_PASSWORD</name>
+          <description>Sample password parameter</description>
+          <defaultValue>{AQAAABAAAAAQOqrtP5UaIXVdWE3YF2MnB0YNQfVmfBBqmfLM6ZytC4k=}</defaultValue>
+        </hudson.model.PasswordParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TEST_CHOICE</name>
+          <description>Sample multi-choice parameter</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>production</string>
+              <string>staging</string>
+              <string>development</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2648.va9433432b33c">
+    <script>
+pipeline {
+    agent any
+    parameters {
+        booleanParam(name: &quot;TEST_BOOLEAN&quot;, defaultValue: true, description: &quot;Sample boolean parameter&quot;)
+        string(name: &quot;TEST_STRING&quot;, defaultValue: &quot;ssbostan&quot;, trim: true, description: &quot;Sample string parameter&quot;)
+        text(name: &quot;TEST_TEXT&quot;, defaultValue: &quot;Jenkins Pipeline Tutorial&quot;, description: &quot;Sample multi-line text parameter&quot;)
+        password(name: &quot;TEST_PASSWORD&quot;, defaultValue: &quot;SECRET&quot;, description: &quot;Sample password parameter&quot;)
+        choice(name: &quot;TEST_CHOICE&quot;, choices: [&quot;production&quot;, &quot;staging&quot;, &quot;development&quot;], description: &quot;Sample multi-choice parameter&quot;)
+    }
+    stages {
+        stage(&quot;Build&quot;) {
+            steps {
+                echo &quot;Build stage.&quot;
+                echo &quot;Hello $params.TEST_STRING&quot;
+            }
+        }
+        stage(&quot;Test&quot;) {
+            steps {
+                echo &quot;Test stage. $params.TEST_TEXT&quot;
+            }
+        }
+        stage(&quot;Release&quot;) {
+            steps {
+                echo &quot;Release stage. $params.TEST_CHOICE&quot;
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

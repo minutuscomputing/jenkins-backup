@@ -1,0 +1,405 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>hudson.diagnosis.TooManyJobsButNoView</string>
+    <string>jenkins.diagnostics.ControllerExecutorsNoAgents</string>
+    <string>OldData</string>
+    <string>jenkins.security.QueueItemAuthenticatorMonitor</string>
+    <string>jenkins.diagnostics.ControllerExecutorsAgents</string>
+  </disabledAdministrativeMonitors>
+  <version>2.332</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Create:arati</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Create:meghana</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Create:neelam</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Create:pramod</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Create:soumya</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Delete:neelam</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Delete:pramod</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:arati</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:meghana</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:neelam</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:pramod</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:soumya</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Update:arati</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Update:meghana</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Update:neelam</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Update:pramod</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Update:soumya</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:arati</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:meghana</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:neelam</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:pramod</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:soumya</permission>
+    <permission>USER:hudson.model.Computer.Build:arati</permission>
+    <permission>USER:hudson.model.Computer.Build:meghana</permission>
+    <permission>USER:hudson.model.Computer.Build:neelam</permission>
+    <permission>USER:hudson.model.Computer.Build:pramod</permission>
+    <permission>USER:hudson.model.Computer.Build:soumya</permission>
+    <permission>USER:hudson.model.Computer.Configure:arati</permission>
+    <permission>USER:hudson.model.Computer.Configure:meghana</permission>
+    <permission>USER:hudson.model.Computer.Configure:neelam</permission>
+    <permission>USER:hudson.model.Computer.Configure:pramod</permission>
+    <permission>USER:hudson.model.Computer.Configure:soumya</permission>
+    <permission>USER:hudson.model.Computer.Connect:arati</permission>
+    <permission>USER:hudson.model.Computer.Connect:meghana</permission>
+    <permission>USER:hudson.model.Computer.Connect:neelam</permission>
+    <permission>USER:hudson.model.Computer.Connect:pramod</permission>
+    <permission>USER:hudson.model.Computer.Connect:soumya</permission>
+    <permission>USER:hudson.model.Computer.Create:arati</permission>
+    <permission>USER:hudson.model.Computer.Create:meghana</permission>
+    <permission>USER:hudson.model.Computer.Create:neelam</permission>
+    <permission>USER:hudson.model.Computer.Create:pramod</permission>
+    <permission>USER:hudson.model.Computer.Create:soumya</permission>
+    <permission>USER:hudson.model.Computer.Delete:arati</permission>
+    <permission>USER:hudson.model.Computer.Delete:meghana</permission>
+    <permission>USER:hudson.model.Computer.Delete:neelam</permission>
+    <permission>USER:hudson.model.Computer.Delete:pramod</permission>
+    <permission>USER:hudson.model.Computer.Delete:soumya</permission>
+    <permission>USER:hudson.model.Computer.Disconnect:arati</permission>
+    <permission>USER:hudson.model.Computer.Disconnect:meghana</permission>
+    <permission>USER:hudson.model.Computer.Disconnect:neelam</permission>
+    <permission>USER:hudson.model.Computer.Disconnect:pramod</permission>
+    <permission>USER:hudson.model.Computer.Disconnect:soumya</permission>
+    <permission>USER:hudson.model.Hudson.Administer:admin</permission>
+    <permission>USER:hudson.model.Hudson.Administer:neelam</permission>
+    <permission>USER:hudson.model.Hudson.Administer:pramod</permission>
+    <permission>USER:hudson.model.Hudson.Read:arati</permission>
+    <permission>USER:hudson.model.Hudson.Read:meghana</permission>
+    <permission>USER:hudson.model.Hudson.Read:neelam</permission>
+    <permission>USER:hudson.model.Hudson.Read:pramod</permission>
+    <permission>USER:hudson.model.Hudson.Read:soumya</permission>
+    <permission>USER:hudson.model.Item.Build:arati</permission>
+    <permission>USER:hudson.model.Item.Build:meghana</permission>
+    <permission>USER:hudson.model.Item.Build:neelam</permission>
+    <permission>USER:hudson.model.Item.Build:pramod</permission>
+    <permission>USER:hudson.model.Item.Build:soumya</permission>
+    <permission>USER:hudson.model.Item.Cancel:arati</permission>
+    <permission>USER:hudson.model.Item.Cancel:meghana</permission>
+    <permission>USER:hudson.model.Item.Cancel:neelam</permission>
+    <permission>USER:hudson.model.Item.Cancel:pramod</permission>
+    <permission>USER:hudson.model.Item.Cancel:soumya</permission>
+    <permission>USER:hudson.model.Item.Configure:arati</permission>
+    <permission>USER:hudson.model.Item.Configure:meghana</permission>
+    <permission>USER:hudson.model.Item.Configure:neelam</permission>
+    <permission>USER:hudson.model.Item.Configure:pramod</permission>
+    <permission>USER:hudson.model.Item.Configure:soumya</permission>
+    <permission>USER:hudson.model.Item.Create:arati</permission>
+    <permission>USER:hudson.model.Item.Create:meghana</permission>
+    <permission>USER:hudson.model.Item.Create:neelam</permission>
+    <permission>USER:hudson.model.Item.Create:pramod</permission>
+    <permission>USER:hudson.model.Item.Create:soumya</permission>
+    <permission>USER:hudson.model.Item.Delete:arati</permission>
+    <permission>USER:hudson.model.Item.Delete:meghana</permission>
+    <permission>USER:hudson.model.Item.Delete:neelam</permission>
+    <permission>USER:hudson.model.Item.Delete:pramod</permission>
+    <permission>USER:hudson.model.Item.Delete:soumya</permission>
+    <permission>USER:hudson.model.Item.Discover:arati</permission>
+    <permission>USER:hudson.model.Item.Discover:meghana</permission>
+    <permission>USER:hudson.model.Item.Discover:neelam</permission>
+    <permission>USER:hudson.model.Item.Discover:pramod</permission>
+    <permission>USER:hudson.model.Item.Discover:soumya</permission>
+    <permission>USER:hudson.model.Item.Move:arati</permission>
+    <permission>USER:hudson.model.Item.Move:meghana</permission>
+    <permission>USER:hudson.model.Item.Move:neelam</permission>
+    <permission>USER:hudson.model.Item.Move:pramod</permission>
+    <permission>USER:hudson.model.Item.Move:soumya</permission>
+    <permission>USER:hudson.model.Item.Read:arati</permission>
+    <permission>USER:hudson.model.Item.Read:meghana</permission>
+    <permission>USER:hudson.model.Item.Read:neelam</permission>
+    <permission>USER:hudson.model.Item.Read:pramod</permission>
+    <permission>USER:hudson.model.Item.Read:soumya</permission>
+    <permission>USER:hudson.model.Item.Workspace:arati</permission>
+    <permission>USER:hudson.model.Item.Workspace:meghana</permission>
+    <permission>USER:hudson.model.Item.Workspace:neelam</permission>
+    <permission>USER:hudson.model.Item.Workspace:pramod</permission>
+    <permission>USER:hudson.model.Item.Workspace:soumya</permission>
+    <permission>USER:hudson.model.Run.Delete:arati</permission>
+    <permission>USER:hudson.model.Run.Delete:meghana</permission>
+    <permission>USER:hudson.model.Run.Delete:neelam</permission>
+    <permission>USER:hudson.model.Run.Delete:pramod</permission>
+    <permission>USER:hudson.model.Run.Delete:soumya</permission>
+    <permission>USER:hudson.model.Run.Replay:arati</permission>
+    <permission>USER:hudson.model.Run.Replay:meghana</permission>
+    <permission>USER:hudson.model.Run.Replay:neelam</permission>
+    <permission>USER:hudson.model.Run.Replay:pramod</permission>
+    <permission>USER:hudson.model.Run.Replay:soumya</permission>
+    <permission>USER:hudson.model.Run.Update:arati</permission>
+    <permission>USER:hudson.model.Run.Update:meghana</permission>
+    <permission>USER:hudson.model.Run.Update:neelam</permission>
+    <permission>USER:hudson.model.Run.Update:pramod</permission>
+    <permission>USER:hudson.model.Run.Update:soumya</permission>
+    <permission>USER:hudson.model.View.Configure:arati</permission>
+    <permission>USER:hudson.model.View.Configure:meghana</permission>
+    <permission>USER:hudson.model.View.Configure:neelam</permission>
+    <permission>USER:hudson.model.View.Configure:pramod</permission>
+    <permission>USER:hudson.model.View.Configure:soumya</permission>
+    <permission>USER:hudson.model.View.Create:arati</permission>
+    <permission>USER:hudson.model.View.Create:meghana</permission>
+    <permission>USER:hudson.model.View.Create:neelam</permission>
+    <permission>USER:hudson.model.View.Create:pramod</permission>
+    <permission>USER:hudson.model.View.Create:soumya</permission>
+    <permission>USER:hudson.model.View.Delete:arati</permission>
+    <permission>USER:hudson.model.View.Delete:meghana</permission>
+    <permission>USER:hudson.model.View.Delete:neelam</permission>
+    <permission>USER:hudson.model.View.Delete:pramod</permission>
+    <permission>USER:hudson.model.View.Delete:soumya</permission>
+    <permission>USER:hudson.model.View.Read:arati</permission>
+    <permission>USER:hudson.model.View.Read:meghana</permission>
+    <permission>USER:hudson.model.View.Read:neelam</permission>
+    <permission>USER:hudson.model.View.Read:pramod</permission>
+    <permission>USER:hudson.model.View.Read:soumya</permission>
+    <permission>USER:hudson.scm.SCM.Tag:arati</permission>
+    <permission>USER:hudson.scm.SCM.Tag:meghana</permission>
+    <permission>USER:hudson.scm.SCM.Tag:neelam</permission>
+    <permission>USER:hudson.scm.SCM.Tag:pramod</permission>
+    <permission>USER:hudson.scm.SCM.Tag:soumya</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.HealthCheck:arati</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.HealthCheck:meghana</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.HealthCheck:neelam</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.HealthCheck:pramod</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.HealthCheck:soumya</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.ThreadDump:arati</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.ThreadDump:meghana</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.ThreadDump:neelam</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.ThreadDump:pramod</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.ThreadDump:soumya</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.View:arati</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.View:meghana</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.View:neelam</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.View:pramod</permission>
+    <permission>USER:jenkins.metrics.api.Metrics.View:soumya</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:arati</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:meghana</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:neelam</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:pramod</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:soumya</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:arati</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:meghana</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:neelam</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:pramod</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:soumya</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.View:arati</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.View:meghana</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.View:neelam</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.View:pramod</permission>
+    <permission>USER:org.jenkins.plugins.lockableresources.LockableResourcesManager.View:soumya</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name>JDK8</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers/>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+    <jdk>
+      <name>JDK 1.8</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.JDKInstaller plugin="jdk-tool@1.5">
+              <id>jdk-9.0.4-oth-JPR</id>
+              <acceptLicense>true</acceptLicense>
+            </hudson.tools.JDKInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.4.2">
+      <owner class="hudson" reference="../../.."/>
+      <name>meghana pipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <componentSpecs>
+        <se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+          <name>job</name>
+          <firstJob>java_project</firstJob>
+          <lastJob></lastJob>
+          <showUpstream>true</showUpstream>
+        </se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+      </componentSpecs>
+      <noOfPipelines>3</noOfPipelines>
+      <showAggregatedPipeline>false</showAggregatedPipeline>
+      <noOfColumns>1</noOfColumns>
+      <sorting>none</sorting>
+      <showAvatars>false</showAvatars>
+      <updateInterval>2</updateInterval>
+      <showChanges>false</showChanges>
+      <allowManualTriggers>false</allowManualTriggers>
+      <showTotalBuildTime>false</showTotalBuildTime>
+      <allowRebuild>false</allowRebuild>
+      <allowPipelineStart>false</allowPipelineStart>
+      <allowAbort>false</allowAbort>
+      <showDescription>false</showDescription>
+      <showPromotions>false</showPromotions>
+      <showTestResults>false</showTestResults>
+      <showStaticAnalysisResults>false</showStaticAnalysisResults>
+      <linkRelative>false</linkRelative>
+      <pagingEnabled>false</pagingEnabled>
+      <showAbsoluteDateTime>false</showAbsoluteDateTime>
+      <showAggregatedChanges>false</showAggregatedChanges>
+      <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
+      <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
+      <regexpFirstJobs/>
+      <linkToConsoleLog>false</linkToConsoleLog>
+      <description></description>
+    </se.diabol.jenkins.pipeline.DeliveryPipelineView>
+    <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.4.2">
+      <owner class="hudson" reference="../../.."/>
+      <name>pipeline a</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <componentSpecs>
+        <se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+          <name>title</name>
+          <firstJob>job11</firstJob>
+          <lastJob></lastJob>
+          <showUpstream>true</showUpstream>
+        </se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+      </componentSpecs>
+      <noOfPipelines>3</noOfPipelines>
+      <showAggregatedPipeline>false</showAggregatedPipeline>
+      <noOfColumns>1</noOfColumns>
+      <sorting>none</sorting>
+      <showAvatars>false</showAvatars>
+      <updateInterval>2</updateInterval>
+      <showChanges>false</showChanges>
+      <allowManualTriggers>false</allowManualTriggers>
+      <showTotalBuildTime>false</showTotalBuildTime>
+      <allowRebuild>false</allowRebuild>
+      <allowPipelineStart>false</allowPipelineStart>
+      <allowAbort>false</allowAbort>
+      <showDescription>false</showDescription>
+      <showPromotions>false</showPromotions>
+      <showTestResults>false</showTestResults>
+      <showStaticAnalysisResults>false</showStaticAnalysisResults>
+      <linkRelative>false</linkRelative>
+      <pagingEnabled>false</pagingEnabled>
+      <showAbsoluteDateTime>false</showAbsoluteDateTime>
+      <showAggregatedChanges>false</showAggregatedChanges>
+      <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
+      <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
+      <regexpFirstJobs/>
+      <linkToConsoleLog>false</linkToConsoleLog>
+      <description></description>
+    </se.diabol.jenkins.pipeline.DeliveryPipelineView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.8">
+      <owner class="hudson" reference="../../.."/>
+      <name>DevOps_Pipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>job11</firstJob>
+        <firstJobLink>job/job11/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>3</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>true</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.8">
+      <owner class="hudson" reference="../../.."/>
+      <name>try</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>job11</firstJob>
+        <firstJobLink>job/job11/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>Soumya</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="java.lang.String$CaseInsensitiveComparator"/>
+        <string>Apache-pipeline</string>
+        <string>Choice-Parameterize</string>
+        <string>MultiBranch-Demo-s</string>
+        <string>parameter-pipeline</string>
+        <string>pipeline-shell_script</string>
+        <string>Timeouts_pipeline</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>false</recurse>
+    </listView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>true</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+  <nodeRenameMigrationNeeded>false</nodeRenameMigrationNeeded>
+</hudson>

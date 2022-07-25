@@ -1,0 +1,28 @@
+Started
+[Thu Jun 02 11:41:00 UTC 2022] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote --symref -- https://github.com/jenkins-docs/building-a-multibranch-pipeline-project.git # timeout=10
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-db55cdf89ead301d14b960171f80344d/.git # timeout=10
+Setting origin to https://github.com/jenkins-docs/building-a-multibranch-pipeline-project.git
+ > git config remote.origin.url https://github.com/jenkins-docs/building-a-multibranch-pipeline-project.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/jenkins-docs/building-a-multibranch-pipeline-project.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch master
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: master (still at e486ee40486bab10fe0af1c0ebafc5a19fd50fe4)
+Processed 1 branches
+[Thu Jun 02 11:41:01 UTC 2022] Finished branch indexing. Indexing took 0.98 sec
+Evaluating orphaned items in MultiBranch-Demo-s
+Will not remove develop as it is only #1 in the list
+Will remove develop as it is too old
+Finished: SUCCESS

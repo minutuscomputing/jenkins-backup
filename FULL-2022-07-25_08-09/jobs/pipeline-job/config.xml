@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2648.va9433432b33c">
+    <script>
+        }
+        
+    }
+    post 
+    {
+        always
+        {
+            emaipipeline{
+    agent {label &apos;ubuntu&apos;}
+    stages {
+        stage(&apos;Build&apos;) {
+            steps {
+                echo &apos;Building&apos;
+            }
+        }
+        stage(&apos;Testing&apos;) {
+            steps {
+                echo &apos;Testing&apos;
+            }           
+        }
+        stage(&quot;Deploying&quot;) {
+            steps {
+                echo &apos;Deploying&apos;
+            }
+            
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

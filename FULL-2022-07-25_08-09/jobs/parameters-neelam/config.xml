@@ -1,0 +1,81 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>TEST_BOOLEAN</name>
+          <description>sample boolean param</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TEST_STRING</name>
+          <description>test string param</description>
+          <defaultValue>neelam</defaultValue>
+          <trim>true</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>TEST_TEXT</name>
+          <description>Sample multi-line text parameter</description>
+          <defaultValue>this is a sample jenkins pipeline using parameters</defaultValue>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.PasswordParameterDefinition>
+          <name>TEST_PASSWORD</name>
+          <description>sample password param</description>
+          <defaultValue>{AQAAABAAAAAQAkOWeElh1r3F98svXjladRX34GJG0zu88ADTs+kkyKg=}</defaultValue>
+        </hudson.model.PasswordParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TEST_CHOICE</name>
+          <description>sample choice parameters</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>test</string>
+              <string>development</string>
+              <string>production</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2648.va9433432b33c">
+    <script>
+pipeline {
+    agent any
+ 
+    stages {
+        stage(&quot;Build&quot;) {
+            steps {
+                echo &quot;Build stage.&quot;
+                echo &quot;Hello $params.TEST_STRING&quot;
+            }
+        }
+        stage(&quot;Test&quot;) {
+            steps {
+                echo &quot;Test stage. $params.TEST_TEXT&quot;
+            }
+        }
+        stage(&quot;Release&quot;) {
+            steps {
+                echo &quot;Release stage. $params.TEST_CHOICE&quot;
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

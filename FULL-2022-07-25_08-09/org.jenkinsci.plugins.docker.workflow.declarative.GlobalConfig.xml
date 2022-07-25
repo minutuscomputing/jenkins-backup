@@ -1,0 +1,8 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.docker.workflow.declarative.GlobalConfig plugin="docker-workflow@1.28">
+  <dockerLabel>docker</dockerLabel>
+  <registry plugin="docker-commons@1.19">
+    <url>https://hub.docker.com</url>
+    <credentialsId>dockerhub</credentialsId>
+  </registry>
+</org.jenkinsci.plugins.docker.workflow.declarative.GlobalConfig>
