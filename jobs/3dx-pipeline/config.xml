@@ -1,0 +1,157 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1254.v3f64639b_11dd">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>This Pipeline is used to perform the installation of the following services on the target.&#xd;
+1) 3DPassport&#xd;
+2) 3DDashboard&#xd;
+3) FederatedSearch&#xd;
+4) 3DSpacce&#xd;
+5) 3DSpaceIndex&#xd;
+6) File Collaboration Server&#xd;
+7) 3DNotification&#xd;
+8) 3DComment&#xd;
+9) Exaled CloudView&#xd;
+10) 3DSwym.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3536.vb_8a_6628079d5">
+    <script>pipeline {
+    agent
+	    {
+               label &apos;Mohit_Ansi-Controller&apos;
+            }
+
+    tools {
+        maven &quot;Default&quot;
+    }
+
+    stages {
+        /* Installing Apache */ 
+	    stage(&apos;Installing Apache&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_Apache.yml&quot;
+	    }
+        }
+        
+        /* Generating SSL */
+        stage(&apos;Generating SSL&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/generate_SSL.yml&quot;
+	    }
+        }
+        
+        /* Configuring system */
+        stage(&apos;Configuring system&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/configure_System.yml&quot;
+	    }
+        }
+        
+        /* 3DPassport */
+        stage(&apos;3DPassport&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_3DPassport.yml&quot;
+	    }
+        }
+        
+        
+        /* FederatedSearchFoundation */
+        stage(&apos;FederatedSearchFoundation&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_FederatedSearchFoundation.yml&quot;
+	    }
+        }
+        
+        /* 3DSpace */
+        stage(&apos;3DSpace&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_3DSpace.yml&quot;
+	    }
+        }
+        
+        
+        /* 3DSpaceIndex */
+        stage(&apos;3DSpaceIndex&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_3DSpaceIndex.yml&quot;
+	    }
+        }
+        
+        
+        /* FCS */
+        stage(&apos;FCS&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_FCS.yml&quot;
+	    }
+        }
+        
+        
+        /* 3DNotification */
+        stage(&apos;3DNotification&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_3DNotification.yml&quot;
+	    }
+        }
+        
+        
+        /* 3DComment */
+        stage(&apos;3DComment&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_3DComment.yml&quot;
+	    }
+        }
+        
+        
+        /* EXALEAD_CloudView */
+        stage(&apos;EXALEAD_CloudView&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_EXALEAD_CloudView.yml&quot;
+	    }
+        }
+        
+        
+        /* 3DSwym */
+        stage(&apos;3DSwym&apos;) {
+	        
+	    steps
+	    {
+	       sh &quot;sudo ansible-playbook -i inventory playbooks/install_3DSwym.yml&quot;
+	    }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

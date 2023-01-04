@@ -1,0 +1,112 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<user>
+  <version>10</version>
+  <id>meghana</id>
+  <fullName>meghana</fullName>
+  <properties>
+    <jenkins.security.ApiTokenProperty>
+      <tokenStore>
+        <tokenList>
+          <jenkins.security.apitoken.ApiTokenStore_-HashedToken>
+            <uuid>88061ae4-0500-4c19-b403-f95212a8c1c2</uuid>
+            <name>webhook</name>
+            <creationDate>2022-12-16 08:12:13.855 UTC</creationDate>
+            <value>
+              <version>11</version>
+              <hash>95a77eabf6c328f07d3fbc2ae2cc99b4bb1450389443e2b7a83c944d4e8941eb</hash>
+            </value>
+          </jenkins.security.apitoken.ApiTokenStore_-HashedToken>
+        </tokenList>
+      </tokenStore>
+    </jenkins.security.ApiTokenProperty>
+    <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@1214.v1de940103927">
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <specifications/>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <java.util.concurrent.CopyOnWriteArrayList/>
+        </entry>
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <name>blueocean-github-domain</name>
+            <description>blueocean-github-domain to store credentials by BlueOcean</description>
+            <specifications>
+              <io.jenkins.blueocean.rest.impl.pipeline.credential.BlueOceanDomainSpecification plugin="blueocean-pipeline-scm-api@1.26.0"/>
+            </specifications>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <list>
+            <com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
+              <scope>USER</scope>
+              <id>github</id>
+              <description>GitHub Access Token</description>
+              <username>meghana</username>
+              <password>{AQAAABAAAAAw+gzmrZ93N3UVS8aoCjBOsq2LXsqr4TN8ZKDCVvunq+/LGHYj+XnzIzbF/uH8Z1Tccszaf5i39GbptrgXgzzKMw==}</password>
+              <usernameSecret>false</usernameSecret>
+            </com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
+          </list>
+        </entry>
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <name>blueocean-private-key-domain</name>
+            <specifications/>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <list>
+            <com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey plugin="ssh-credentials@305.v8f4381501156">
+              <scope>USER</scope>
+              <id>jenkins-generated-ssh-key</id>
+              <description>jenkins-generated-ssh-key</description>
+              <username>meghana</username>
+              <usernameSecret>false</usernameSecret>
+              <privateKeySource class="com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource">
+                <privateKey>{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}</privateKey>
+              </privateKeySource>
+            </com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey>
+          </list>
+        </entry>
+      </domainCredentialsMap>
+    </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.92">
+      <triggers/>
+    </hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty>
+    <hudson.model.MyViewsProperty>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>all</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty plugin="display-url-api@2.3.6">
+      <providerId>default</providerId>
+    </org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <jenkins.security.seed.UserSeedProperty>
+      <seed>380b05d1ae065713</seed>
+    </jenkins.security.seed.UserSeedProperty>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <hudson.model.TimeZoneProperty/>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$2VMDGKoNSGJVm.f8b5At2u5lTbSrOUmwvrYED0ZaUY1RFOfC3N1me</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@438.v02c7f0a_12fa_4">
+      <emailAddress>meghana.mahale@minutuscomputing.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1670246106221</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
+    <hudson.plugins.favorite.user.FavoriteUserProperty plugin="favorite@2.4.1">
+      <data class="concurrent-hash-map"/>
+    </hudson.plugins.favorite.user.FavoriteUserProperty>
+  </properties>
+</user>

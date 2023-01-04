@@ -1,0 +1,11 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.jenkins.plugins.analysis.core.model.WarningsPluginConfiguration plugin="warnings-ng@9.21.0">
+  <sourceDirectories>
+    <io.jenkins.plugins.analysis.core.model.SourceDirectory>
+      <path>/var/lib/jenkins/</path>
+    </io.jenkins.plugins.analysis.core.model.SourceDirectory>
+  </sourceDirectories>
+  <normalizedSourceDirectories>
+    <string>/var/lib/jenkins</string>
+  </normalizedSourceDirectories>
+</io.jenkins.plugins.analysis.core.model.WarningsPluginConfiguration>

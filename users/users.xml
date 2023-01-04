@@ -1,0 +1,42 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>pramod</string>
+      <string>pramod_16699208305841082004</string>
+    </entry>
+    <entry>
+      <string>noreply</string>
+      <string>noreply_7264175998880136833</string>
+    </entry>
+    <entry>
+      <string>meghana</string>
+      <string>meghana_10720555864449562221</string>
+    </entry>
+    <entry>
+      <string>admin</string>
+      <string>admin_8757659739086708661</string>
+    </entry>
+    <entry>
+      <string>neelam</string>
+      <string>neelam_12520441022596758485</string>
+    </entry>
+    <entry>
+      <string>arati</string>
+      <string>arati_10645674236551987835</string>
+    </entry>
+    <entry>
+      <string>mohit.kamble</string>
+      <string>mohitkamble_16475006789608832931</string>
+    </entry>
+    <entry>
+      <string>98483086+meghanamahale</string>
+      <string>98483086Meghan_12170712428332937531</string>
+    </entry>
+    <entry>
+      <string>meghana.mahale</string>
+      <string>meghanamahale_10110090966785806168</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>
