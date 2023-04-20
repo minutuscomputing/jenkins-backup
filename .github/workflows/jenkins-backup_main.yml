@@ -1,0 +1,16 @@
+name: Gitleaks Secrets Scan for jenkins-backup main branch
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  check-for-secrets:
+    uses: minutuscomputing/DevOps3DEXPIntegration/.github/workflows/DevOps3DEXPIntegration_main.yml@main
+    secrets:
+      token: ${{ secrets.MY_GITHUB_TOKEN }}
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
