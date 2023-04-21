@@ -10,33 +10,6 @@
       <port>22</port>
       <commonConfig class="jenkins.plugins.publish_over_ssh.BapSshCommonConfiguration">
         <secretPassphrase>{AQAAABAAAAAgiCkWnt8CVpsPyzg95XVS0qZJjGH9hHTJNJmYIct26Jo5XQzCvRR0z5MGuN2ChtT2}</secretPassphrase>
-        <key>-----BEGIN RSA PRIVATE KEY-----
-MIIEoAIBAAKCAQEAuOm1R2qe8iTrLPF11mSffWEw/JNlbrYQt1vgQ/shJ1RSjHr+
-kVAzRIexnt8VbWLshYKoFe6MPc0FGuLN84PWul5JjY9DlxArr4UlC4zw06/o+vws
-Eo+tSJx28pjf5BXIA+VbA1HdUt6+wYcxT6qh/jJ8dxMCiIpmydg2ZawgQS0LPpXa
-wrAKA/ouD5Xqq2XfVmmgA/pvKl+y/9vo6JKmovqfiYs7jRM0kNpxOmwZVTiyPPgl
-3/TbcsUy5hMOwINXHZjgmamKimhdVmcEuA7xW/JAkcwYwDSLWIbUFhmxM1AKSUjr
-t6/d/oPR2l0rlupauOpM+uqLY4uBo6/VQHSJAQIDAQABAoIBAFeVEnC2Fny4cc+C
-un6GgGhBXZN0OOncQESotqtcShK3xLWXF/Y5116RKtcF8L8zyLVf8j8ZEsG+1rkq
-TcQWYOE7AXmULr5hQV/MH4S+B98sBZzDThiohrnKqigzsm/0xRzbSGVlJAA5Un6V
-iwyh1EJzJTK9BUkozJCz4Of9Q/W6EsqD501RuqVXHNcMHoF3mnZACgePiZesmLqu
-4KxdIh6YvOdfkj1lcBadzj5sbP0LvvDawf3nrVyKIAVXxr4ysGzr4tW9jJn2PixU
-b7XT5wb5MMZo+mgCJD3pxYwCjsakLittdzvL8hfZqahXO+/ITPsUbCgCrT6Vj0fT
-sASq/8ECgYEA4WNfSkRFjxTMu9KgTRPcjmD5qbK6RU7aTMwLwQFBLiaRgcatgd3E
-Hw2E2YvFTcvJjL79o814vqQQYPJ/rW7wioddlME+gxaoTUmmV16Fr7PHfVB4btVo
-/EvuprsZEzDtoG8WflzRPv1FrBi7x+Ky1FRE/LVzfyUir545PSm8zFkCgYEA0gcI
-ZfpWY/LqXMT66fjmw+7+ACr0VGLnpO+riza/ip2OnsVDGkJf+GAYWauDGRS7GDnJ
-CN/w0vgHYLbSEOrVxOl1mPFhCfrU6ywLqxAn+WV2VV+UVMpFp+fablhJyasKBaLY
-Vohs6QQ68YK2uPq8gyg5SDfzBnXbURk9ffeRbOkCf11SyCH4ItUbx6n9jGJd1vUd
-MkMRvg70l281Dajc3CA/1//kQ/OB37L75gYt2YRc3Rdp/ZvVeCl3xVBfGH63cOHr
-KtRtL3UX7JgT5sxGVxRpXDCHIVbDBrVwu2BOGBPaLoo/dRDdXca3GCIqG5aoR2Oj
-gO0iNLBwr+wHl6u7nHECgYAwmKf80JvErKRFqt5T3N+oXlgvOcEm9Wub4kjTAWv4
-atRhMEuCe/EwyytXNDQ1TXKs/FHj180lQ3aRjju05mFoGoy3QsKtSHiTobFhd2+I
-aU2kG2V66QKNAzyrY4pPO2AqRa/A9fgdQnlRAGm/C2UrA9edOjTlPcftT+XGi83+
-YQKBgA31PdyDd8ft6t7iQgNsDRRcacJEKHxRiUGWXEZGYK2NkdzjSbHr7HCdEwY2
-hgQyBxH+z8ZcFe66/EmpQSQ1UTxOoQtcjg1SEdYOhiGZaXuHEReHDjWGSPsz8GNz
-r9aVSKGKppGZLwM6MIKsGFNaV3IHGYNuSnHhLiTg3mG5sAWr
------END RSA PRIVATE KEY-----</key>
         <keyPath></keyPath>
         <disableAllExec>false</disableAllExec>
       </commonConfig>
